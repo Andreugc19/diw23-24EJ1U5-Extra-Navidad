@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up</title>
+</head>
+<body class="custom-font signup_page" style="background-image: url('images/hero.jpg');">
+    <header>
+        <a href="index.html"><img src="./images/Logo.png" alt="Computer Page Logo" class="desktop-logo"></a>
+        <a href="index.html"><img src="./images/Logo Mobile.png" alt="Mobile Page Logo" class="mobile-logo"></a>
+    </header>
+
+    <div class="container mt-5 color-container">
+        <form id="form">
+            <div class="form-group">
+                <label for="username">First Name</label>
+                <input type="text" id="firstname">
+                <small>Missatge d'error</small>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Last Name</label>
+                <input type="text" id="lastname">
+                <small>Missatge d'error</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Address</label>
+                <input type="email" id="email">
+                <small>Missatge d'error</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <small>Missatge d'error</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword">
+                <small>Missatge d'error</small>
+            </div>
+
+            <div class="form-group">
+                <label for="userType">User Type:</label>
+                <div>
+                    <input type="radio" id="isStandardUser" name="userType" value="standard" class="user-radio">
+                    <label for="isStandardUser">Standard User</label>
+                </div>
+                <div>
+                    <input type="radio" id="isAdmin" name="userType" value="admin" class="user-radio">
+                    <label for="isAdmin">Administrator</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Selection Avatar</label>
+                <div id="avatar-selection">
+                    <input type="radio" id="avatar1" name="avatar" class="avatar-radio" onclick="radioValue(this.value)" value="user1" />
+                    <label for="avatar1" class="avatar-label">
+                        <img src="images/user1.png" alt="Avatar 1" style="max-width: 130px; max-height: 130px;">
+                    </label>
+        
+                    <input type="radio" id="avatar2" name="avatar" class="avatar-radio" onclick="radioValue(this.value)" value="user2" />
+                    <label for="avatar2" class="avatar-label">
+                        <img src="images/user2.png" alt="Avatar 2" style="max-width: 130px; max-height: 130px;">
+                    </label>
+        
+                    <input type="radio" id="avatar3" name="avatar" class="avatar-radio" onclick="radioValue(this.value)" value="user3" />
+                    <label for="avatar3" class="avatar-label">
+                        <img src="images/user3.png" alt="Avatar 3" style="max-width: 130px; max-height: 130px;">
+                    </label>
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="btn btn-dark" id="submit"></input>
+        </form>
+    </div>
+
+    <footer class="bg-primary text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p>Follow us</p>
+                </div>
+                <div class="col-6 text-right">
+                    <a href="#"><img src="./images/facebook.png" alt="Facebook" class="img-fluid"></a>
+                    <a href="#"><img src="./images/twitter.png" alt="Twitter" class="img-fluid"></a>
+                    <a href="#"><img src="./images/instagram.png" alt="Instagram" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="sign_up.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+</body>
+</html>
